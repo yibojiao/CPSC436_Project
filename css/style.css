@@ -1,0 +1,64 @@
+.legend {
+    font-family: American Typewriter, serif;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.title {
+    margin:auto;
+    padding: 30px;
+    text-align: center;
+    display:block;
+    font-size: 50px;
+    width:1400px;
+    font-family: Chalkduster, fantasy
+}
+#right1 {
+    width: 600px;
+    height: 650px;
+}
+#right2 {
+    width: 600px;
+    height: 650px;
+    display: none;
+}
+#right3 {
+    width: 600px;
+    height: 650px;
+    display: none;
+}
+#paras {
+    margin: 13px;
+    width: 600px;
+    height: 250px;
+    font-size: 15px;
+    color: #5a5a5a;
+    line-height: 1.7;
+}
+#vis2 {
+    width: 600px;
+    height: 400px;
+}
+#radar {
+    width: 300px;
+    height: 400px;
+}
+#ring {
+    width: 300px;
+    height: 400px;
+}
+body {
+    font-family: American Typewriter, serif;
+    font-size: 10px;
+    cursor: default;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
