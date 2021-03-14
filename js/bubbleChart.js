@@ -157,7 +157,7 @@ class BubbleChart {
     
     // page button
     vis.button = vis.svg
-      .append('g').attr('class', 'legend').attr('transform', `translate(${vis.center.x+100}, ${vis.center.y-360})`);
+      .append('g').attr('class', 'legend').attr('transform', `translate(${-vis.center.x+80}, ${vis.center.y-6})`);
     vis.button.append('circle').attr('class', 'pagebtn').classed('one', true)
       .attr('r', 30).attr('stroke', '#5a5a5a').attr('stroke-width', '3px').attr('fill', vis.drawIcon('One'))
       .on('click', function(event) {
@@ -185,6 +185,13 @@ class BubbleChart {
             break;
         }
       });
+      vis.buttonlabel = vis.svg
+        .append('g').attr('class', 'legend').attr('transform', `translate(${-vis.center.x+120}, ${vis.center.y})`);
+      vis.buttonlabel.append('text')
+        .text('Switch Page')
+        .attr('font-size', '20px')
+        .attr('fill', '#5a5a5a')
+        .attr('alignment-baseline', 'central')
   }
 
 

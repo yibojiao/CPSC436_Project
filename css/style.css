@@ -1,6 +1,10 @@
 .legend {
     font-family: American Typewriter, serif;
 }
+.page {
+    width: 1425px;
+    margin: 10px;
+}
 .row {
     display: flex;
     flex-direction: row;
