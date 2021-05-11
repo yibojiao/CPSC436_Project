@@ -19,11 +19,54 @@
             </div>
 
             <div class='col' id='right2'>
-                <text style='font-size:150px'>THE SECOND PAGE</text>
+                <!-- <text style='font-size:150px'>THE SECOND PAGE</text> -->
+                <!-- Pipeline Legend -->
+                <!-- <br><br> -->
+                <h2 style="font-family: Marker Felt; font-size: 20px; transform: translate(15px,0px);">Production Stages</h2>
+                <form id="form" class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <input id="farm" class="pipeline-input" type="checkbox" value="farm">
+                    <label class="btn btn-secondary farm" for="farm">
+                        Farm
+                    </label>
+                    <input id="land" class="pipeline-input" type="checkbox" value="land">
+                    <label class="btn btn-secondary land" for="land">
+                        Land Use Change
+                    </label>
+                    <input id="feed" class="pipeline-input" type="checkbox"  value="feed">
+                    <label class="btn btn-secondary feed" for="feed">
+                        Animal Feed
+                    </label>
+                    <input id="process" class="pipeline-input" type="checkbox" value="processing">
+                    <label class="btn btn-secondary process" for="process">
+                        Processing
+                    </label>
+                    <input id="pack" class="pipeline-input" type="checkbox" value="packaging">
+                    <label class="btn btn-secondary pack" for="pack">
+                        Packaging
+                    </label>
+                    <input id="trans" class="pipeline-input" type="checkbox" value="transport">
+                    <label class="btn btn-secondary trans" for="trans">
+                        Transport
+                    </label>
+                    <input id="retail" class="pipeline-input" type="checkbox" name="myCheckBox" value="retail">
+                    <label class="btn btn-secondary retail" for="retail">
+                        Retail 
+                    </label>
+                </form>
+                <br/>
+                <div class='row' id='vis-cloud'>
+                    <div id='cloud-protein'></div>
+                    <div id='cloud-fruit-veg'></div>
+                </div>
+                <div class='row' id='vis-cloud'>
+                    <div id='cloud-grain'></div>
+                    <div id='cloud-oil-other'></div>
+                    <div id='cloud-legend'></div>
+                </div>
             </div>
 
             <div class='col' id='right3'>
-                <text style='font-size:150px'>THE THIRD PAGE</text>
+                <div id='histogram'></div>
             </div>
         </div>
         </div>
@@ -35,6 +78,8 @@
     <script src="js/main.js"></script>
     <script src="js/bubbleChart.js"></script>
     <script src="js/radarChart.js"></script>
-    <script src="js/RingChart.js"></script>
+    <script src="js/co2CloudChart.js"></script>
+    <script src="js/ringChart.js"></script>
+    <script src="js/histogram.js"></script>
 </body>
 </html>
